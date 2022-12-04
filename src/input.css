@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+@layer utilities {
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .fadeInUp {
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+@keyframes fade {
+    0% {
+            opacity: 0;
+            
+    }
+    100% {
+            opacity: 1;
+           
+    }
+    
+}
+
+
+.fade {
+    animation: fade  3s ease;
+    }
+  /*   @media (prefers-reduced-motion) {
+        .fadeInUp,
+        .fade,
+        {
+            animation: none;
+        }
+    } */
+}
+
+@layer components {
+    .nav-links {
+      @apply border-b border-customGray  block py-4  text-base text-customGray font-medium ;
+    }
+
+  }

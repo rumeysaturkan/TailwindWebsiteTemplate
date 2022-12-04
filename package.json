@@ -1,0 +1,18 @@
+{
+  "name": "brandwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "alpinejs-dev": "npx esbuild ./src/index.js --outfile=dist/bundle.js --bundle --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alpinejs/intersect": "^3.10.5",
+    "alpinejs": "^3.10.5",
+    "esbuild": "^0.15.17"
+  }
+}
